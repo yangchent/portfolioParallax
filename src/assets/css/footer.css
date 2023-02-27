@@ -1,0 +1,11 @@
+.footer {
+  position: f;
+  bottom: 0;
+  padding: 20px 0;
+  width: 100%;
+  color: var(--cream);
+  }
+  
+ .footer p {
+    margin: 0;
+  }

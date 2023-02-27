@@ -1,0 +1,44 @@
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  }
+nav li{
+  list-style-type: none;
+  padding: 0 3rem;
+}
+
+/* LANGUAGE SELECTION */
+
+.language-dropdown {
+  color: #fff;
+}
+
+.language-dropdown-toggle ul{
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.language-option {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.language-option:hover,
+.language-option.active {
+  background-color: #eee;
+}

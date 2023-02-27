@@ -1,0 +1,39 @@
+.resume{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.resume img{
+    width: 34rem;
+    transition: transform .5s ease;
+}
+.resume img:hover{
+    transform: scale(1.5);
+}
+.resumeFr{
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.resumeEn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.download {
+    text-decoration: none;
+    color: var(--skin);
+    background: var(--dark);
+    padding: .5em 2em;
+    border: 1px solid var(--skin);
+    border-radius: 6px;
+    height: 100%;
+    font-weight: bold;
+}
+.download:hover{
+    color: var(--dark);
+    background: var(--skin);
+    
+}

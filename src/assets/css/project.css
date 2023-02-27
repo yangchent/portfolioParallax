@@ -1,0 +1,229 @@
+/* Interest page */
+/* CARDS */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    margin: 1.1em;
+    padding: 1em;
+    width: 25em;
+    min-height: 12em;
+    display: grid;
+    grid-template-rows: 1.5em 1.5em 1fr 3em;
+    border-radius: 10px;
+    box-shadow: 0px 1.5em 2em rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 1.5em 2em rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+  }
+  
+  .card__link,
+  .card__exit {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .card__link::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: .2em;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+  }
+  
+  .card__link:hover::after {
+    width: 100%;
+  }
+  
+  .card__exit {
+    grid-row: 1/2;
+    justify-self: end;
+  }
+  
+  .card__title {
+    grid-row: 3/4;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  .card__apply {
+    grid-row: 4/5;
+    align-self: center;
+  }
+/* CARD BACKGROUNDS */
+
+.card-1 {
+    background: radial-gradient(#1fe4f5, #3fbafe);
+  }
+  
+  .card-2 {
+    background: radial-gradient(#fbc1cc, #fa99b2);
+  }
+  
+  .card-3 {
+    background: radial-gradient(#76b2fe, #b69efe);
+  }
+  
+  .card-4 {
+    background: radial-gradient(#60efbc, #58d5c9);
+  }
+  
+  .card-5 {
+    background: radial-gradient(#f588d8, #c0a3e5);
+  }
+  
+  /* RESPONSIVE */
+  
+  @media (max-width: 1600px) {
+    .cards {
+      justify-content: center;
+    }
+  }
+  
+/* second card CSS */
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+.project {
+    height: 100vh;
+    text-align: center;
+    margin-top: 9rem;
+}
+.container_project {
+    max-width: 1000px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+  }
+  .card01 {
+    position: relative;
+    border-radius: 2rem;
+  }
+  
+  .card01 .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.7s;
+    z-index: 1;
+  }
+  
+  .container1 .card01:nth-child(1) .icon {
+    background: #e07768;
+  }
+  
+  .card01:nth-child(2) .icon {
+    background: #6eadd4;
+  }
+  
+  .card01:nth-child(3) .icon {
+    background: #4aada9;
+  }
+  
+  
+   .card01 .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+  }
+  
+  i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+  }
+  
+   .card01 .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+  }
+  
+  .card01 .face.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+  }
+  
+   .card01:hover .face.face1{
+    background: #ff0057;
+    transform: translateY(0px);
+  }
+  
+   .card01 .face.face1 .content {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
+   .card01:hover .face.face1 .content {
+    opacity: 1;
+  }
+  
+   .card01 .face.face1 .content i{
+    max-width: 100px;
+  }
+  
+   .card01 .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-100px);
+  }
+  
+   .card01:hover .face.face2{
+    transform: translateY(0);
+  }
+  
+   .card01 .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #414141;
+  }
+  
+   .card01 .face.face2 .content h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    color: #414141;
+  } 
+  
+  .project a {
+    text-decoration: none;
+    color: #414141;
+  }
