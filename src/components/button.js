@@ -8,8 +8,6 @@ function Button(props){
             <div className="button__line"></div>
             <div className="button__line"></div>
             <span className="button__text">{props.children}</span>
-            {/* <div className="button__drow1"></div>
-            <div className="button__drow2"></div> */}
             </Link>
         </div>
     )

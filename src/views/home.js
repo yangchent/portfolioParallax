@@ -12,23 +12,26 @@ import forty from '../assets/icons/40.png';
 import sixty from '../assets/icons/60.png';
 import Contact from './contact';
 
+
+
 function Home() {
+  
     return (
       <ParallaxProvider>
       <div>
           <section className='parallax'>
           
-            <ParallaxBannerLayer offset={0.2} speed={-30} >
+            <ParallaxBannerLayer offset={0.2} speed={-25} >
             <img src={mountain1} alt="hill1" />
             </ParallaxBannerLayer> 
             
-            <ParallaxBannerLayer offset={0.2} speed={-20}>
+            <ParallaxBannerLayer offset={0.2} speed={-15}>
             <img src={mountain2} alt="hill2" />
             </ParallaxBannerLayer> 
-            <ParallaxBannerLayer offset={0.1} speed={-10}>
+            <ParallaxBannerLayer offset={0.1} speed={-5}>
             <img src={mountain3} alt="hill2" />
             </ParallaxBannerLayer> 
-            <ParallaxBannerLayer offset={0.2} speed={-20} >
+            <ParallaxBannerLayer offset={0.2} speed={-10} >
               <div className='parallax-text flex'>
                 <div id="profile_image">
                   <img src={profile} alt="profile" className='spinner' />
@@ -87,7 +90,7 @@ function Home() {
         </section>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2c7da0" fillOpacity="1" d="M0,192L30,197.3C60,203,120,213,180,202.7C240,192,300,160,360,128C420,96,480,64,540,64C600,64,660,96,720,101.3C780,107,840,85,900,101.3C960,117,1020,171,1080,197.3C1140,224,1200,224,1260,208C1320,192,1380,160,1410,144L1440,128L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
       </div>
-   
+    
       </ParallaxProvider>
     );
   }

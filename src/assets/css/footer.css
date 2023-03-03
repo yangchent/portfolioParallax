@@ -6,6 +6,17 @@
   color: var(--cream);
   }
   
- .footer p {
-    margin: 0;
-  }
+.footer p {
+  margin: 0;
+}
+.footer ul{
+list-style-type: none;
+color: var(--cream);
+}
+.footer ul{
+color: var(--cream);
+}
+.footer a{
+text-decoration: none;
+color: var(--cream);
+}

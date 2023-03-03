@@ -8,13 +8,12 @@ import Resume from './components/resume';
 import Contact from './views/contact';
 import Project from './views/project';
 import NoPage from './components/error';
-
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
- 
+
   return (
     <div>   
-  
       <Router>
         <Header />
         <Routes>
@@ -24,8 +23,9 @@ function App() {
           <Route path="/project" element={<Project />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
+        <Footer />
+        <ScrollToTop smooth  />
       </Router> 
-      <Footer />
     
     </div>
   );

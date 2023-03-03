@@ -10,6 +10,7 @@ function Header() {
   const location = useLocation();
     // It is a hook imported from 'react-i18next'
    const { t } = useTranslation(); 
+ 
   
     return (
       <header >
@@ -19,7 +20,8 @@ function Header() {
             {/* <li><Button children={t('project_title')} to='/project'/></li>
             <li><Button children={t('contact-title')} to='/contact'/></li>
             <li><Button children={t('resume_title')} to='/resume' /></li> */}
-            <li><Button children="PROJET" to='/project'/></li>
+            <li><Button children="PROJET" to='#project'/></li>
+            
             <li><Button children="CONTACT" to='#contact'/></li>
             <li><Button children="CV" to='/resume' /></li>
             {/* <li>  <LanguageSelect /> </li> */}
@@ -30,8 +32,9 @@ function Header() {
               <li><Button children={t('contact_title')} to='/contact'/></li>
               <li><Button children={t('resume_title')} to='/resume' /></li> */}
             
-              <li><Button children="Projet" to='/project'/></li>
-              <li><Button children="Contact" to='/contact'/></li>
+              <li><Button children="Projet" to='#project'/></li>
+              <li><Button children="Contact" to= {{ pathname: "/PATH_NAME", hash: "#contact" }}/></li>
+             
               <li><Button children="CV" to='/resume' /></li>
           </ul>
           )}
